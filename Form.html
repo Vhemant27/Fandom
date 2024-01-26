@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form name="form1" method="post" enctype="multipart/form-data">
+        <fieldset>
+        <legend>User Info</legend>
+    
+        <table width="400"  cellpadding="5" cellspacing="10">
+            
+            <tr>
+                <td><label>Enter First name</label></td>
+                <td><input class="box" type="text" name="fname" required autofocus/></td>
+            </tr>
+            <tr>
+                <td><label>Enter Last name</label></td>
+                <td><input class="box" type="text" name="lname"/></td>
+            </tr>
+            <tr>
+                <td><label>Enter Age:</label></td>
+                <td><input class="box" name="age" type="number" min="1" max="90"></td>
+            </tr>
+            <tr>
+                <td><label>Please select your Gender</label></td>
+                <td><input name="gender" type="radio" value="male">Male
+                <input name="gender" type="radio" value="female">Female</td>
+
+            </tr>
+            <tr>
+                <td><label>Please select your country:</label></td>
+                <td>
+                    <select class="box" name="country">
+                        <option value="0">Please select any one</option>
+                        <option value="1">India</option>
+                        <option value="2">USA</option>
+                        <option value="3">UK</option>
+                        <option value="4">Australia</option>
+                        <option value="5">Bhutan</option>
+                        <option value="6">New Zealand</option>
+                        <option value="7">Japan</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><lable >Please select Your Meal</lable></td>
+                <td >
+                    <input class="food" type="checkbox" name="veg"/>Veg 
+                    <input class="food" type="checkbox" name="non-veg"/>NonVeg 
+                    <input class="food" type="checkbox" name="continental">Continental 
+
+                </td>
+            </tr>
+            <tr>
+                <td><label>Select monthly budget</label> </td>
+                <td>
+                    <input type="range" name="budget" min="50" max="1000">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Enter Address:</label></td>
+                <td>
+                    <textarea class="box" rows="4" cols="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Enter email</label></td>
+                <td><input type="email" placeholder="xyz@example.com"></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password"></inout></td>
+            </tr>
+
+            <tr>
+                <td><label>Upload File</label></td>
+                <td><input type="file" pattern=""></td>
+            </tr>
+            <tr>
+                <td><label>How do you know about us</label></td>
+                <td>
+                    <input type="url" name="url" list="url-list">
+                    <datalist id="url-list">
+                        <option value="http://google.com" label="Google">
+                            <option value="http://facebook.com" label="Facebook"></option>
+                            <option value="http://bing.com" label="Bing"></option>
+
+                        </option>
+                    </datalist>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label>Please choose a date for checkIN</label>
+                </td>
+                <td><input type="datetime-local" name="date">
+                </td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                    <input type="image" src="./images/mongoo.png" width="100" height="20">
+                    <!-- <input type="reset"/> -->
+                </td>
+            </tr>
+
+        </table>
+    </fieldset>
+    
+    </form>
+
+
+</body>
+</html>

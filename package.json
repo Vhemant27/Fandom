@@ -1,0 +1,15 @@
+{
+  "name": "my-folder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass":"node-sass -o css sass",
+    "sassw":"node-sass -o css sass -w"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
