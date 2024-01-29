@@ -15,14 +15,11 @@
     padding: 10px;
 
   }
-
- 
-
   .hide{
     display:none;
   }
   .luffy:hover{
-    transform: rotate(90deg);
+    transform: perspective(400px) rotate(90deg) scale(2.2);
     transition-duration: 7s;
 
   }
@@ -224,7 +221,21 @@ div.transbox {
     border-radius: 30px;
     cursor: pointer;
   }
-  
+
+.bb{
+    display:none;
+}
+  .transbox:hover+.bb{
+    
+    background: white;
+    border: 1px solid black;
+    opacity: 0.7;
+    font-weight: bolder;
+    height: 100%;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
 p {
     font-weight: bolder;
     color: #000000;
