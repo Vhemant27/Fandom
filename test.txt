@@ -1,0 +1,35 @@
+        console.log('this.paginationLimit',this.paginationLimit)
+        const paginationElement = document.querySelector('[data-limit]') as HTMLElement;
+
+        if(this.paginationLimit){
+          paginationElement.setAttribute("data-limit",this.itemsPerPage);
+          if(paginationElement){
+            
+          }
+        }
+
+I am assiging value to a data attribute but html for that is already loaded, but i want this value should be updated to the attribute in browser markup. How can i do this s
+
+
+I am passing this value in an organisO55 the attribute is set but that orgainsm logi cis not getting updated how to rerender o o55 that as well
+<div class="o-pagination" data-component="o55-pagination" data-limit="{{limit}}" 
+
+>
+  <div class="o-pagination__container" data-pagination-container>
+    <div class="o-pagination__paginationControl -isDisabled" data-pagination-previous>
+      {{> molecule/m02-button theme="white" level="primary" icon="arrow-left" aria=(object label=@root.i18n.previous) }}
+    </div>
+    {{!-- <span data-dummy></span> --}}
+    <ul class="o-pagination__list" data-pagination-items>
+    {{#each pages}}
+      <li class="o-pagination__item">
+        {{> organism/o57-pagination-item }}
+      </li>
+    {{/each}}
+    </ul>
+    <div class="o-pagination__paginationControl {{#if disabled}}-isDisabled{{/if}}" data-pagination-next>
+      {{> molecule/m02-button theme="white" level="primary" icon="arrow-right" aria=(object label=@root.i18n.next) }}
+    </div>
+  </div>
+</div>
+
